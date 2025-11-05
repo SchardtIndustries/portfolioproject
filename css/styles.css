@@ -146,3 +146,53 @@ a:focus {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
+/* =========================================================
+   Layout Enhancement: Grid + Responsive Flexbox Nav
+   ========================================================= */
+
+/* ----- Level 2: Grid page structure (mobile-first) ----- */
+body.page {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main";   /* add "footer" later if needed */
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+}
+
+.site-header { grid-area: header; }
+.container   { grid-area: main; }
+
+/* ----- Level 1 + 5: Flexbox nav (stacked by default) ----- */
+.site-nav {
+  display: flex;
+  flex-direction: column;      /* mobile-first: stacked links */
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--cmu-red);
+}
+
+.site-nav a {
+  color: #fff;
+  font-weight: 600;
+  padding: 0.375rem 0.5rem;
+  border-radius: 0.5rem;
+  transition: background-color .15s ease, color .15s ease;
+}
+.site-nav a:hover {
+  background: rgba(255,255,255,0.14);
+}
+.site-nav a:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* ----- Level 4 + 5: Responsive horizontal nav at ≥ 768 px ----- */
+@media (min-width: 768px) {
+  .site-nav {
+    flex-direction: row;        /* horizontal layout */
+    justify-content: space-between;
+    gap: 1.25rem;
+  }
+}
