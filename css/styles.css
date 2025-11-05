@@ -1,3 +1,129 @@
-body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 2rem; line-height: 1.5; }
-nav a { text-decoration: none; margin-right: .75rem; }
-nav a:hover { text-decoration: underline; }
+/* ===== Reset-ish ===== */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+html, body { height: 100%; }
+
+:root{
+  /* --- CMU Palette --- */
+  --cmu-red:       #C41230; /* CMU Red (Pantone 187) */
+  --cmu-red-600:   #A50F28; /* darker hover/active */
+  --cmu-red-700:   #8C0D22; /* darkest for focus rings on dark bg */
+
+  /* Neutrals */
+  --bg:            #F7F7F8; /* page background */
+  --surface:       #FFFFFF; /* cards/surfaces */
+  --text:          #0F172A; /* near-slate-900 for readability */
+  --muted:         #5B6770; /* CMU-ish slate */
+  --border:        #E5E7EB;
+
+  /* Links / accents */
+  --link:          var(--cmu-red);
+  --link-hover:    var(--cmu-red-600);
+}
+
+/* ===== Base ===== */
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  line-height: 1.2;
+  color: var(--text);
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+p { margin: 0 0 1rem; }
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+a:hover { color: var(--link-hover); }
+a:focus {
+  outline: 2px solid var(--cmu-red-700);
+  outline-offset: 2px;
+}
+
+/* ===== Layout ===== */
+.container {
+  width: min(72ch, 100%);
+  margin-inline: auto;
+  padding: 1.5rem;
+}
+
+/* ===== Header / Nav (CMU Red) ===== */
+.site-header {
+  background: var(--cmu-red);
+  color: #fff;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.75rem 1rem; /* box model: internal spacing */
+}
+
+.site-nav a {
+  color: #fff;
+  font-weight: 600;
+  padding: 0.375rem 0.5rem;
+  border-radius: 0.5rem;
+  transition: background-color .15s ease, color .15s ease;
+}
+.site-nav a:hover {
+  background: rgba(255,255,255,0.14);
+}
+.site-nav a:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* ===== Box Model spacing for content ===== */
+.container h1 { margin: 1rem 0 0.5rem; }
+.container h2 { margin: 2rem 0 0.5rem; }
+.container p  { margin: 0 0 1rem; }
+
+/* ===== Profile placeholder (will become image later) ===== */
+.profile-pic {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  border: 3px solid var(--cmu-red);
+  background: #e2e8f0;
+}
+
+/* Optional: simple button style matching CMU colors */
+.btn {
+  display: inline-block;
+  background: var(--cmu-red);
+  color: #fff;
+  padding: 0.5rem 0.875rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color .15s ease, transform .06s ease;
+}
+.btn:hover { background: var(--cmu-red-600); }
+.btn:active { transform: translateY(1px); }
+.btn:focus {
+  outline: 2px solid var(--cmu-red-700);
+  outline-offset: 2px;
+}
+
+/* Optional: cards */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+.card h3 { margin: 0 0 0.5rem; color: var(--text); }
+.card p  { color: var(--muted); }
