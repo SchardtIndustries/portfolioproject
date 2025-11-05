@@ -127,3 +127,22 @@ a:focus {
 }
 .card h3 { margin: 0 0 0.5rem; color: var(--text); }
 .card p  { color: var(--muted); }
+
+/* ===== Advanced Selectors & Subtle Interactivity ===== */
+
+/* Add hover/focus/active states to buttons */
+.btn:hover {
+  background: var(--cmu-red-600);
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  background: var(--cmu-red-700);
+  transform: translateY(1px);
+}
+
+/* Add hover underline only to links inside the main content area */
+.container a:not(.btn):hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
