@@ -9,3 +9,6 @@ Thumbs.db
 # Node (if you later add tooling)
 node_modules/
 dist/
+
+#assignments
+Due_*/
