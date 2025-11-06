@@ -1,34 +1,58 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact — My Portfolio</title>
-  <meta name="description" content="How to get in touch." />
+<main id="main" class="container" tabindex="-1">
+  <h1>Contact</h1>
 
-  <!-- Fonts + CSS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body class="page">
-  <header class="site-header">
-    <nav class="site-nav" aria-label="Primary">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  <p>Email me at
+    <a href="mailto:matthew.schardt45@gmail.com">matthew.schardt45@gmail.com</a>
+  </p>
+  <p>You can see some of my projects on GitHub at
+    <a href="https://github.com/SchardtIndustries" target="_blank" rel="noopener noreferrer">SchardtIndustries</a>
+  </p>
+  <p>Or you can find me on LinkedIn at
+    <a href="https://www.linkedin.com/in/matthew-schardt/" target="_blank" rel="noopener noreferrer">Matthew Schardt</a>
+  </p>
 
-  <main id="main" class="container" tabindex="-1">
-    <h1>Contact</h1>
-    <p>Email me at <a href="mailto:matthew.schardt45@gmail.com">matthew.schardt45@gmail.com</a></p>
-    <p>You can see some of my projects on GitHub at <a href="https://github.com/SchardtIndustries" target="_blank" rel="noopener noreferrer">SchardtIndustries</a></p>
-    <p>Or you can find me on LinkedIn at <a href="https://www.linkedin.com/in/matthew-schardt/" target="_blank" rel="noopener noreferrer">Matthew Schardt</a></p>
-    <p><button class="btn" type="button">Say hi</button></p>
-  </main>
+  <h2>Send a message</h2>
 
-  <script src="js/main.js" defer></script>
-</body>
-</html>
+  <!-- Level 1: Basic structure -->
+  <!-- Level 2: Semantic + Accessible with labels/ids/for -->
+  <form action="#" method="post" class="contact-form" novalidate>
+    <div class="form-field">
+      <label for="name">Name</label>
+      <input
+        id="name"
+        name="name"
+        type="text"
+        required
+        aria-required="true"
+        autocomplete="name"
+        placeholder="Your full name" />
+    </div>
+
+    <div class="form-field">
+      <label for="email">Email</label>
+      <input
+        id="email"
+        name="email"
+        type="email"
+        required
+        aria-required="true"
+        autocomplete="email"
+        placeholder="you@example.com"
+        aria-describedby="email-hint" />
+      <small id="email-hint" class="form-hint">I’ll only use this to reply to you.</small>
+    </div>
+
+    <div class="form-field">
+      <label for="message">Message</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="6"
+        required
+        aria-required="true"
+        placeholder="How can I help?"></textarea>
+    </div>
+
+    <button class="btn" type="submit">Send message</button>
+  </form>
+</main>
