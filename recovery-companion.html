@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recovery Companion — Project</title>
+  <meta name="description" content="Recovery Companion app details and tester signup." />
+
+  <!-- Fonts + CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="color-scheme" content="light dark" />
+</head>
+<body class="page">
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Project Header -->
+  <section class="projects" style="padding-top:1rem;">
+    <h2>Recovery Companion</h2>
+
+    <!-- App Icon -->
+    <p style="margin:.5rem 0 1rem;">
+      <img src="Recovery_Companion.png" alt="Recovery Companion icon"
+           style="max-width:160px;height:auto;border-radius:12px;display:block;margin:0 auto;">
+    </p>
+
+    <!-- Tester Signup (centered narrow box) -->
+    <div style="max-width:480px;margin:0 auto 2rem;">
+      <h3 style="text-align:center;">Become a Tester</h3>
+      <p style="text-align:center;">Want early access? Drop your email below and I’ll add you to the tester list.</p>
+
+      <form
+        name="rc-testers"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        class="contact-form"
+        style="background:var(--surface);border:1px solid var(--border);border-radius:0.75rem;padding:1rem;margin-top:0.5rem;"
+      >
+        <input type="hidden" name="form-name" value="rc-testers" />
+        <p hidden>
+          <label>Don’t fill this out if you’re human:
+            <input name="bot-field" />
+          </label>
+        </p>
+
+        <div class="form-field">
+          <label for="tester-email">Email</label>
+          <input id="tester-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com" />
+        </div>
+
+        <button class="btn" type="submit" style="display:block;margin:0 auto;">Join the tester list</button>
+        <p class="form-hint" style="text-align:center;margin-top:.5rem;">I’ll only use your email to invite you and send build updates.</p>
+      </form>
+    </div>
+
+    <!-- Version + Metadata -->
+    <p><strong>Version:</strong> 1.1.0<br>
+       <strong>Platform:</strong> Android + iOS<br>
+       <strong>Author:</strong> Matthew Schardt (Schardt Industries)<br>
+       <strong>License:</strong> Proprietary / Internal Testing Build
+    </p>
+  </section>
+
+  <!-- README-style content -->
+  <section class="projects" style="border-top:1px solid var(--border); padding-top:1rem;">
+    <h3>Overview</h3>
+    <p><strong>Recovery Companion</strong> helps people in addiction recovery stay mindful, track progress, and connect with supportive resources.
+    It combines journaling, sobriety tracking, relapse-prevention tools, local help discovery, a growing community hub, and a verified meeting locator — all in one private, secure app.</p>
+    <p><strong>v1.1.0</strong> marks a <strong>major milestone</strong>: every tab is functional and stable, with the new <strong>Meetings Finder</strong> powered by a live ingestion and normalization pipeline for <strong>AA/NA meeting data</strong>.</p>
+
+    <h3>Features (as of v1.1.0)</h3>
+
+    <h4>Profile</h4>
+    <ul>
+      <li>Supabase Auth with email confirmation & password reset.</li>
+      <li>Editable username, DOB, and bio.</li>
+      <li>Avatar upload with secure Supabase Storage.</li>
+      <li>Row-level security (RLS) in <code>public.profiles</code>.</li>
+    </ul>
+
+    <h4>Ask (Social Hub)</h4>
+    <ul>
+      <li><strong>Forum:</strong> threaded Q&A, emoji reactions.</li>
+      <li><strong>Friends:</strong> requests, blocking/unblocking.</li>
+      <li><strong>Realtime:</strong> Supabase channels keep things live.</li>
+      <li><strong>Moderation:</strong> Edge function + SQL triggers.</li>
+    </ul>
+
+    <h4>Beat Craving</h4>
+    <ul>
+      <li><strong>Relax Coach:</strong> breathing and PMR routines with animation.</li>
+      <li><strong>Meditate:</strong> offline morning/night quotes.</li>
+      <li><strong>Games:</strong> Memory, Snake, Brick Breaker.</li>
+    </ul>
+
+    <h4>Sobriety Tracker</h4>
+    <ul>
+      <li>Live “Sober for…” counter.</li>
+      <li>Medals for 1 day → 50 years.</li>
+      <li>Milestone notifications.</li>
+    </ul>
+
+    <h4>Get Help</h4>
+    <ul>
+      <li>Quick-call 911 & 988 buttons.</li>
+      <li>Nearby hospitals & rehab centers.</li>
+      <li>Emergency contacts saved locally.</li>
+    </ul>
+
+    <h4>Meetings Finder (NEW)</h4>
+    <ul>
+      <li>AA / NA meeting locator with live ingestion.</li>
+      <li>Data pipeline from BMLT/TSML to Supabase <code>meetings_master</code>.</li>
+      <li>Filters: program, day, online, nearby.</li>
+      <li>Favorites + admin-reviewed submissions.</li>
+    </ul>
+
+    <h3>What’s New in v1.1.0</h3>
+
+    <h4>Meetings Finder</h4>
+    <ul>
+      <li><code>meetings_master</code> table with UUIDs & indexes.</li>
+      <li>Automated scripts for ingestion & normalization.</li>
+      <li>In-app filters, favorites, add-meeting flow.</li>
+    </ul>
+
+    <h4>Games Polishing</h4>
+    <ul>
+      <li>Brick Breaker physics + paddle reflection.</li>
+      <li>Snake gesture control.</li>
+      <li>Memory scoring updates.</li>
+    </ul>
+
+    <h4>Relax & Meditate</h4>
+    <ul>
+      <li>Improved animation and pacing.</li>
+      <li>Offline quote rotation.</li>
+    </ul>
+
+    <p style="margin-top:2rem;text-align:center;">
+      <a class="btn" href="index.html#in-progress">Back to Projects</a>
+      <a class="btn" href="contact.html">Contact</a>
+    </p>
+  </section>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
