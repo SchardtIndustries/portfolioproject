@@ -440,3 +440,28 @@ body.page {
   color: var(--muted);
   font-size: 0.95rem;
 }
+
+/* App Store promo banner */
+.promo-banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 2rem auto;
+  padding: 0;
+}
+
+.promo-banner a {
+  display: block;
+  width: 100%;
+  max-width: 1400px; /* Prevents it from ever getting too huge */
+}
+
+.promo-banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+
+  /* Helps keep images crisp on retina screens */
+  image-rendering: auto;
+}
