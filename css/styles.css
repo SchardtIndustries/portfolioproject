@@ -465,3 +465,164 @@ body.page {
   /* Helps keep images crisp on retina screens */
   image-rendering: auto;
 }
+/* ===== Hero section for Schardt Industries ===== */
+.hero {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 2.5rem 1.5rem 2rem;
+}
+
+.hero .container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-family: "Playfair Display", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  font-size: 2.25rem;
+  margin: 0 0 0.75rem;
+}
+
+.hero-tagline {
+  font-size: 1.125rem;
+  margin: 0 0 0.75rem;
+  color: var(--text);
+}
+
+.hero-subtext {
+  margin: 0 0 1.25rem;
+  color: var(--muted);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  align-items: center;
+}
+
+.hero-secondary-link {
+  font-weight: 600;
+  color: var(--link);
+}
+
+.hero-secondary-link:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+.hero-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.4rem 0;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.radio-option input[type="radio"] {
+  transform: scale(1.2);
+}
+
+.label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.choice-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.4rem 0;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.choice-option input[type="checkbox"] {
+  transform: scale(1.2);
+}
+
+.store-badge {
+  height: 48px;     /* uniform size */
+  width: auto;
+  display: inline-block;
+  object-fit: contain;
+}
+
+.store-badge-large {
+  height: 64px;     /* if you want a bigger size */
+  width: auto;
+  object-fit: contain;
+}
+
+.site-footer {
+  margin-top: 4rem;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 2.5rem 1.5rem 1.5rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.footer-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-main p {
+  margin: 0.2rem 0;
+}
+
+.footer-brand {
+  font-size: 1rem;
+}
+
+.footer-tagline {
+  font-size: 0.95rem;
+}
+
+.footer-separator {
+  margin: 0 0.4rem;
+}
+
+.footer-social-heading {
+  font-weight: 600;
+  margin: 0 0 0.35rem;
+}
+
+.site-footer a {
+  color: var(--link);
+}
+
+.site-footer a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.footer-copy {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+}

@@ -3,57 +3,273 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Killion & Sons Employee Portal — Schardt Industries</title>
-  <meta name="description" content="Internal operations platform developed for Killion & Sons, enhancing employee coordination and scheduling." />
+  <title>KWS Employee Portal — Schardt Industries</title>
+  <meta
+    name="description"
+    content="The KWS Employee Portal is an internal workforce management app built by Schardt Industries for Killion & Sons Well Service, streamlining scheduling, safety paperwork, and incident reporting."
+  />
 
   <!-- Fonts + CSS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
   <link rel="stylesheet" href="css/styles.css" />
   <meta name="color-scheme" content="light dark" />
+
+  <!-- Icons + PWA -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#C41230">
+
+  <!-- OpenGraph Social Preview -->
+  <meta property="og:title" content="Schardt Industries — Custom Software & Internal Tools">
+  <meta property="og:description" content="We design and build custom internal tools, employee portals, and mobile apps that make real-world work easier.">
+  <meta property="og:image" content="https://schardtindustries.com/social-preview.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://schardtindustries.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Schardt Industries — Custom Software & Internal Tools">
+  <meta name="twitter:description" content="We build custom software that simplifies complex work.">
+  <meta name="twitter:image" content="https://schardtindustries.com/social-preview.png">
+
 </head>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-main">
+      <p class="footer-brand"><strong>Schardt Industries</strong></p>
+      <p class="footer-tagline">Custom software, internal tools, and mobile apps.</p>
+
+      <p>
+        <a href="mailto:matthewschardt@schardtindustries.com">
+          matthewschardt@schardtindustries.com
+        </a>
+        <span class="footer-separator">·</span>
+        <span>412-894-6558</span>
+      </p>
+    </div>
+
+    <div class="footer-social">
+      <p class="footer-social-heading">Connect with Schardt Industries</p>
+      <div class="social-icons">
+        <a
+          href="https://www.linkedin.com/in/matthew-schardt/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit my LinkedIn profile"
+        >
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" />
+        </a>
+
+        <a
+          href="https://github.com/SchardtIndustries"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit my GitHub profile"
+        >
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" />
+        </a>
+
+        <!-- App Store developer link -->
+        <a
+          href="https://apps.apple.com/us/developer/matthew-schardt/id1848414132"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View my apps on the Apple App Store"
+        >
+          <img
+            src="App-Store-Logo-Transparent.png"
+            alt="Apps on the App Store"
+            class="store-badge"
+          />
+        </a>
+
+        <!-- Google Play developer link -->
+        <a
+          href="https://play.google.com/store/apps/developer?id=Matthew+Schardt&hl=en_US"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View my apps on Google Play"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googleplay.svg"
+            alt="Apps on Google Play"
+            class="store-badge"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p class="footer-copy">
+      &copy; 2025 Schardt Industries. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+
 <body class="page">
   <header class="site-header">
     <nav class="site-nav" aria-label="Primary">
       <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <main id="main" class="container" tabindex="-1">
-    <h1>Killion & Sons Employee Portal</h1>
-    <img src="KWS_Logo_tp.png" alt="Killion & Sons Well Service Inc. Logo" style="max-width:200px; margin:1rem 0;" />
-    
-    <p>
-        The <strong>Killion & Sons Employee Portal</strong> is a secure internal platform developed for 
-        <strong>Killion & Sons Well Service Inc.</strong> to modernize field and office operations. The system
-        provides employees and supervisors with centralized access to scheduling, inspection reports, incident tracking,
-        training resources, and communication tools.
-    </p>
+  <main class="container">
+    <!-- Hero / summary -->
+    <section class="projects" style="border-top:none; margin-top:2rem;">
+      <h1>KWS Employee Portal</h1>
+      <p>
+        The <strong>KWS Employee Portal</strong> is an internal workforce management app built by
+        Schardt Industries for <strong>Killion &amp; Sons Well Service</strong>. It centralizes
+        scheduling, safety paperwork, and incident reporting for field crews and office staff.
+      </p>
 
-    <p>
-        Built with <strong>Expo React Native</strong> and powered by <strong>Supabase</strong> for backend services 
-        (PostgreSQL, Auth, and Storage), the portal enables cross-platform access on both Android and iOS while maintaining 
-        a unified codebase. Its responsive web-first architecture also allows office staff to manage records from desktop browsers.
-    </p>
+      <div class="project-gallery" style="margin-top:1.5rem;">
+        <article class="project-card" style="max-width:320px; margin-inline:auto;">
+          <div class="project-thumb placeholder" aria-hidden="true">
+            <img
+              class="project-thumb"
+              src="KWS_Logo_tp.png"
+              alt="Killion & Sons Well Service logo"
+            />
+          </div>
+          <p class="project-desc">
+            Private, production-grade internal tool designed and maintained by Schardt Industries.
+          </p>
+        </article>
+      </div>
+    </section>
 
-    <p>
-        My role encompasses full-stack development and system design — from data modeling and authentication 
-        flows to interface layouts and theme consistency. The project demonstrates how modern cloud tools can
-        streamline industrial operations while remaining secure and intuitive for employees in the field.
-    </p>
+    <!-- Overview -->
+    <section class="projects">
+      <h2>Overview</h2>
+      <p>
+        Before this project, much of Killion &amp; Sons’ daily operations lived in a mix of paper
+        forms, text threads, and spreadsheets. Supervisors and coordinators had to track schedules,
+        safety documentation, and incidents across multiple disconnected channels.
+      </p>
+      <p>
+        The KWS Employee Portal brings these workflows into a single application with clear
+        permissions, consistent records, and a mobile-first experience that works for both field
+        and office staff.
+      </p>
+    </section>
 
-    <p>
-        Due to confidentiality and internal use, a public demo is not available; however, this work highlights my
-        ability to design, deploy, and maintain a production-grade business system from the ground up.
-    </p>
+    <!-- Key outcomes -->
+    <section class="projects">
+      <h2>Key outcomes</h2>
+      <div class="project-gallery">
+        <article class="project-card">
+          <h3>Operational visibility</h3>
+          <p class="project-desc">
+            Supervisors and office staff can see who is scheduled where, what paperwork has been
+            completed, and where incidents have occurred without chasing down separate messages.
+          </p>
+        </article>
 
-    <p>
-        <a href="index.html" class="btn">Back to Portfolio</a>
-    </p>
-    </main>
+        <article class="project-card">
+          <h3>Consistent safety documentation</h3>
+          <p class="project-desc">
+            Daily paperwork, lockout/tagout forms, inspections, and other safety documents are
+            captured in a structured, auditable format that’s easy to retrieve later.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>Streamlined incident reporting</h3>
+          <p class="project-desc">
+            Vehicle, injury, property, and environmental incidents can be reported through guided
+            forms that collect the right details the first time.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>Field-ready UX</h3>
+          <p class="project-desc">
+            The app is designed for use on phones and tablets in the field, with clear forms and
+            flows that work even in challenging operating environments.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Core capabilities -->
+    <section class="projects">
+      <h2>Core capabilities</h2>
+      <ul style="max-width:720px; margin:0 auto; text-align:left;">
+        <li><strong>Scheduling:</strong> Views for shifts, divisions, and job sites, supporting both field and office roles.</li>
+        <li><strong>Daily paperwork:</strong> Digital forms for JSAs, LOTO, inspections, hot work, and other safety-critical processes.</li>
+        <li><strong>Incident reporting:</strong> Structured reporting for vehicle, injury, property damage, and environmental events.</li>
+        <li><strong>Employee resources:</strong> Access to safety policies, training materials, and reference documents.</li>
+        <li><strong>Supervisor tools:</strong> Dashboards to review hours, approvals, and policy acknowledgements.</li>
+        <li><strong>Cross-platform access:</strong> Built as a mobile app with web support so it can be used in the field and from the office.</li>
+      </ul>
+    </section>
+
+    <!-- Technical implementation -->
+    <section class="projects">
+      <h2>Technical implementation</h2>
+      <p>
+        The KWS Employee Portal is built as a cross-platform application using a modern stack
+        designed for secure, internal business tools.
+      </p>
+
+      <ul style="max-width:720px; margin:0 auto; text-align:left;">
+        <li><strong>Frontend:</strong> React Native with Expo for mobile, with web support for office use.</li>
+        <li><strong>Backend &amp; data:</strong> Supabase (PostgreSQL, Row-Level Security, file storage) managing employees, schedules, incidents, and documentation.</li>
+        <li><strong>Auth &amp; permissions:</strong> Email/password auth with role-based access and fine-grained RLS to protect sensitive data.</li>
+        <li><strong>Forms &amp; workflows:</strong> Guided flows for incidents and safety paperwork, designed to reduce incomplete or inconsistent submissions.</li>
+        <li><strong>Deployment:</strong> Expo EAS build pipeline, deployed privately for internal company distribution with web deployment for office users.</li>
+      </ul>
+    </section>
+
+    <!-- Role -->
+    <section class="projects">
+      <h2>Role &amp; responsibilities</h2>
+      <p>
+        Schardt Industries led the project from initial concept through production deployment.
+        Responsibilities included:
+      </p>
+      <ul style="max-width:720px; margin:0 auto; text-align:left;">
+        <li>Working with operations leadership to understand existing workflows and requirements.</li>
+        <li>Designing data models and permission structures aligned with safety and reporting needs.</li>
+        <li>Implementing the mobile and web application frontends.</li>
+        <li>Configuring Supabase auth, storage, and Row-Level Security.</li>
+        <li>Deploying and iterating based on real-world feedback from field and office users.</li>
+      </ul>
+    </section>
+
+    <!-- Confidentiality + CTA -->
+    <section class="projects">
+      <h2>Access &amp; confidentiality</h2>
+      <p>
+        The KWS Employee Portal is an internal system used by Killion &amp; Sons Well Service and is
+        not publicly accessible. Screenshots and live demos are available on request where
+        appropriate and with client approval.
+      </p>
+
+      <p style="margin-top:2rem; display:flex; flex-wrap:wrap; gap:0.75rem; justify-content:center;">
+        <a class="btn" href="index.html">Back to Home</a>
+        <a class="btn" href="contact.html">Discuss a similar internal tool</a>
+      </p>
+    </section>
+  </main>
 
   <script src="js/main.js" defer></script>
 </body>
