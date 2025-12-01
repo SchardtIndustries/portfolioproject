@@ -3,30 +3,147 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Thanks!</title>
+  <title>Thank You — Schardt Industries</title>
+  <meta name="description" content="Thank you for requesting a project quote from Schardt Industries." />
+
+  <!-- Fonts + CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
   <meta name="color-scheme" content="light dark" />
+
+  <!-- Icons + PWA -->
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#C41230">
+
+  <!-- OpenGraph Social Preview -->
+  <meta property="og:title" content="Schardt Industries — Custom Software & Internal Tools">
+  <meta property="og:description" content="We design and build custom internal tools, employee portals, and mobile apps that make real-world work easier.">
+  <meta property="og:image" content="https://schardtindustries.com/social-preview.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://schardtindustries.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Schardt Industries — Custom Software & Internal Tools">
+  <meta name="twitter:description" content="We build custom software that simplifies complex work.">
+  <meta name="twitter:image" content="https://schardtindustries.com/social-preview.png">
+
 </head>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-main">
+      <p class="footer-brand"><strong>Schardt Industries</strong></p>
+      <p class="footer-tagline">Custom software, internal tools, and mobile apps.</p>
+
+      <p>
+        <a href="mailto:matthewschardt@schardtindustries.com">
+          matthewschardt@schardtindustries.com
+        </a>
+        <span class="footer-separator">·</span>
+        <span>412-894-6558</span>
+      </p>
+    </div>
+
+    <div class="footer-social">
+      <p class="footer-social-heading">Connect with Schardt Industries</p>
+      <div class="social-icons">
+        <a
+          href="https://www.linkedin.com/in/matthew-schardt/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit my LinkedIn profile"
+        >
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" />
+        </a>
+
+        <a
+          href="https://github.com/SchardtIndustries"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit my GitHub profile"
+        >
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" />
+        </a>
+
+        <!-- App Store developer link -->
+        <a
+          href="https://apps.apple.com/us/developer/matthew-schardt/id1848414132"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View my apps on the Apple App Store"
+        >
+          <img
+            src="App-Store-Logo-Transparent.png"
+            alt="Apps on the App Store"
+            class="store-badge"
+          />
+        </a>
+
+        <!-- Google Play developer link -->
+        <a
+          href="https://play.google.com/store/apps/developer?id=Matthew+Schardt&hl=en_US"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View my apps on Google Play"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googleplay.svg"
+            alt="Apps on Google Play"
+            class="store-badge"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p class="footer-copy">
+      &copy; 2025 Schardt Industries. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+
 <body class="page">
   <header class="site-header">
     <nav class="site-nav" aria-label="Primary">
       <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <section class="projects" style="padding-top:1rem;">
-    <h2>Thanks for reaching out!</h2>
-    <p>I received your message and will get back to you shortly.</p>
-    <p style="margin-top:1rem;">
-      <a class="btn" href="index.html">Return to Home</a>
+  <main class="container narrow" style="padding-top:1.5rem;">
+    <h1>Thank you for your request</h1>
+    <p>
+      Thanks for reaching out to <strong>Schardt Industries</strong>. Your project details have been
+      received.
     </p>
-  </section>
+    <p>
+      I’ll review your information and follow up with next steps, clarifying questions if needed,
+      and an initial timeline and pricing range.
+    </p>
+    <p>
+      In the meantime, you can return to the home page or browse the services I offer.
+    </p>
+
+    <p style="margin-top:1.5rem; display:flex; flex-wrap:wrap; gap:0.75rem;">
+      <a class="btn" href="index.html">Return to Home</a>
+      <a href="services.html">View services</a>
+    </p>
+  </main>
+
+  <script src="js/main.js" defer></script>
 </body>
 </html>

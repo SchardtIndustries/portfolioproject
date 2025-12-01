@@ -3,49 +3,256 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About — My Portfolio</title>
-  <meta name="description" content="About me." />
+  <title>About — Schardt Industries</title>
+  <meta
+    name="description"
+    content="Learn about Schardt Industries and founder Matthew Schardt, a project manager and software developer building custom internal tools, mobile apps, and operational software."
+  />
 
   <!-- Fonts + CSS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
   <link rel="stylesheet" href="css/styles.css" />
+  <meta name="color-scheme" content="light dark" />
+
+  <!-- Icons -->
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#C41230">
+
+  <!-- OpenGraph Social Preview -->
+  <meta property="og:title" content="Schardt Industries — Custom Software & Internal Tools">
+  <meta property="og:description" content="We design and build custom internal tools, employee portals, and mobile apps that make real-world work easier.">
+  <meta property="og:image" content="https://schardtindustries.com/social-preview.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://schardtindustries.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Schardt Industries — Custom Software & Internal Tools">
+  <meta name="twitter:description" content="We build custom software that simplifies complex work.">
+  <meta name="twitter:image" content="https://schardtindustries.com/social-preview.png">
+
 </head>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-main">
+      <p class="footer-brand"><strong>Schardt Industries</strong></p>
+      <p class="footer-tagline">Custom software, internal tools, and mobile apps.</p>
+
+      <p>
+        <a href="mailto:matthewschardt@schardtindustries.com">
+          matthewschardt@schardtindustries.com
+        </a>
+        <span class="footer-separator">·</span>
+        <span>412-894-6558</span>
+      </p>
+    </div>
+
+    <div class="footer-social">
+      <p class="footer-social-heading">Connect with Schardt Industries</p>
+      <div class="social-icons">
+        <a
+          href="https://www.linkedin.com/in/matthew-schardt/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit my LinkedIn profile"
+        >
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" />
+        </a>
+
+        <a
+          href="https://github.com/SchardtIndustries"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit my GitHub profile"
+        >
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" />
+        </a>
+
+        <!-- App Store developer link -->
+        <a
+          href="https://apps.apple.com/us/developer/matthew-schardt/id1848414132"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View my apps on the Apple App Store"
+        >
+          <img
+            src="App-Store-Logo-Transparent.png"
+            alt="Apps on the App Store"
+            class="store-badge"
+          />
+        </a>
+
+        <!-- Google Play developer link -->
+        <a
+          href="https://play.google.com/store/apps/developer?id=Matthew+Schardt&hl=en_US"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View my apps on Google Play"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googleplay.svg"
+            alt="Apps on Google Play"
+            class="store-badge"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p class="footer-copy">
+      &copy; 2025 Schardt Industries. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+
 <body class="page">
   <header class="site-header">
     <nav class="site-nav" aria-label="Primary">
       <a href="index.html">Home</a>
-      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="about.html" aria-current="page">About</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <main id="main" class="container" tabindex="-1">
-    <h1>About Me</h1>
+  <main id="main" class="container narrow" tabindex="-1">
+    <h1>About Schardt Industries</h1>
+
     <p>
-      I’m Matthew Schardt, a project manager in the energy sector and a current student at Carnegie Mellon University, 
-      pursuing advanced coursework in software development and systems design. My background in managing large-scale technical 
-      projects has built my foundation in coordination, process optimization, and cross-disciplinary collaboration — skills I now 
-      apply directly to building software that empowers people.
-    </p>
-    <p>
-      Outside of work, I’m developing Recovery Companion, a mobile application I’m building independently as a full-stack project. 
-      The app supports people in addiction recovery through journaling tools, milestone tracking, and community-driven support features. 
-      It’s built with React Native (Expo) on the frontend, Supabase for authentication and database services, and PostgreSQL for secure, scalable 
-      data management — all designed, coded, and deployed by me.
-    </p>
-    <p>
-      I’m passionate about merging structured project management with creative problem-solving in technology. My long-term goal is to bridge my experience in energy and operations with software that makes systems — and lives — run more efficiently
+      <strong>Schardt Industries</strong> is a focused software studio that designs and builds
+      custom internal tools, employee portals, and mobile apps for teams that need their software
+      to match the way they actually work. The studio is led by
+      <strong>Matthew Schardt</strong>, who combines real-world operations experience with
+      hands-on engineering.
     </p>
 
-    <!-- Profile placeholder from Step 3 -->
+    <p>
+      The mission of Schardt Industries is simple: take the kinds of workflows that usually live in
+      paper forms, text threads, and spreadsheets, and turn them into reliable, purpose-built
+      systems. That includes everything from workforce management tools like the
+      <strong>KWS Employee Portal</strong> to public, recovery-focused products like
+      <strong>Recovery Companion</strong> on iOS and Android.
+    </p>
+
+    <p>
+      Projects are intentionally scoped and delivered with a strong emphasis on clarity,
+      maintainability, and long-term usefulness. The goal isn’t just to ship a proof of concept,
+      but to put a dependable tool in people’s hands that earns its keep every day.
+    </p>
+
+    <h2>About the founder</h2>
+
+    <p>
+      I’m <strong>Matthew Schardt</strong>, a project manager in the energy sector and a software
+      developer. My background includes coordinating field operations, safety requirements, and
+      tight schedules—work where small details matter and systems have to hold up in the real
+      world. Those same principles guide how I design and build software.
+    </p>
+
+    <p>
+      I’m also a current student at <strong>Carnegie Mellon University</strong>, where I continue
+      to build on my engineering foundations and stay current with modern development practices.
+      Schardt Industries is where that formal training meets years of hands-on operations
+      experience.
+    </p>
+
+    <p>
+      Recent work includes:
+    </p>
+
+    <ul>
+      <li>
+        <strong>Recovery Companion</strong> &mdash; a mobile app for people in addiction recovery,
+        featuring meeting search, sobriety tracking, craving-management tools, and community
+        features.
+      </li>
+      <li>
+        <strong>KWS Employee Portal</strong> &mdash; an internal workforce management platform for
+        Killion &amp; Sons Well Service, supporting scheduling, safety paperwork, incident
+        reporting, and employee resources.
+      </li>
+    </ul>
+
+    <p>
+      Whether it’s a new internal tool, an operations dashboard, or a public-facing app, I approach
+      each project with the same mindset: understand the real constraints, design a clear workflow,
+      and ship software that people actually want to use.
+    </p>
+
     <div class="profile-pic" aria-label="Profile picture placeholder"></div>
+
+    <section class="projects" style="margin-top:2.5rem;">
+      <h2>Mission & Values</h2>
+
+      <p>
+        Schardt Industries was founded with a simple belief: software should make life easier, not more
+        complicated. The studio exists to build tools that meaningfully improve how people work and live,
+        without exploiting their data or forcing them into bloated systems they don’t need.
+      </p>
+
+      <p>
+        The mission is to create clear, reliable, purpose-built software that helps people accomplish
+        difficult tasks more easily—whether that’s running field operations, managing safety workflows,
+        or supporting communities through mobile tools like Recovery Companion. Every project is guided
+        by a commitment to transparency, respect for user privacy, and a deep understanding of
+        real-world challenges.
+      </p>
+
+      <h3>Core Values</h3>
+      <ul style="max-width:720px; margin:0 auto; text-align:left;">
+        <li>
+          <strong>Simplicity with purpose</strong> — Software should solve real problems and make hard
+          tasks easier, not bury users in unnecessary layers or complexity.
+        </li>
+
+        <li>
+          <strong>Privacy by default</strong> — Schardt Industries does not work with data brokers and
+          does not design systems that exploit user information. People deserve tools they can trust.
+        </li>
+
+        <li>
+          <strong>Honesty & transparency</strong> — Clear expectations, straightforward communication,
+          and truthful conversations about scope, value, and feasibility.
+        </li>
+
+        <li>
+          <strong>Solution-based development</strong> — Every project begins with understanding the
+          real workflow or challenge behind the request, ensuring that what gets built actually helps.
+        </li>
+
+        <li>
+          <strong>Sustainable results</strong> — Tools should be maintainable, reliable, and built for
+          long-term use, not quick fixes that create problems down the road.
+        </li>
+
+        <li>
+          <strong>People-first software</strong> — Whether for field teams, office staff, or app users
+          seeking support, the goal is always the same: make life better for the people using the tool.
+        </li>
+
+        <li>
+          <strong>A future-focused studio</strong> — Schardt Industries aims to grow into a transparent,
+          people-centered development team working together to make technology more humane and more
+          useful.
+        </li>
+      </ul>
+    </section>
+
   </main>
 
   <script src="js/main.js" defer></script>

@@ -1,180 +1,295 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Recovery Companion — Project</title>
-    <meta name="description" content="Recovery Companion app details and tester signup." />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recovery Companion — Schardt Industries</title>
+  <meta
+    name="description"
+    content="Recovery Companion is a mobile app by Schardt Industries that supports people in addiction recovery with meeting search, sobriety tracking, tools, and community."
+  />
 
-    <!-- Fonts + CSS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css" />
-    <meta name="color-scheme" content="light dark" />
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <meta name="theme-color" content="#C41230">
+  <!-- Fonts + CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="color-scheme" content="light dark" />
+
+  <!-- Icons + PWA -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#C41230">
 </head>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-main">
+      <p class="footer-brand"><strong>Schardt Industries</strong></p>
+      <p class="footer-tagline">Custom software, internal tools, and mobile apps.</p>
+
+      <p>
+        <a href="mailto:matthewschardt@schardtindustries.com">
+          matthewschardt@schardtindustries.com
+        </a>
+        <span class="footer-separator">·</span>
+        <span>412-894-6558</span>
+      </p>
+    </div>
+
+    <div class="footer-social">
+      <p class="footer-social-heading">Connect with Schardt Industries</p>
+      <div class="social-icons">
+        <a
+          href="https://www.linkedin.com/in/matthew-schardt/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit my LinkedIn profile"
+        >
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" />
+        </a>
+
+        <a
+          href="https://github.com/SchardtIndustries"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit my GitHub profile"
+        >
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" />
+        </a>
+
+        <!-- App Store developer link -->
+        <a
+          href="https://apps.apple.com/us/developer/matthew-schardt/id1848414132"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View my apps on the Apple App Store"
+        >
+          <img
+            src="App-Store-Logo-Transparent.png"
+            alt="Apps on the App Store"
+            class="store-badge"
+          />
+        </a>
+
+        <!-- Google Play developer link -->
+        <a
+          href="https://play.google.com/store/apps/developer?id=Matthew+Schardt&hl=en_US"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View my apps on Google Play"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googleplay.svg"
+            alt="Apps on Google Play"
+            class="store-badge"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p class="footer-copy">
+      &copy; 2025 Schardt Industries. All rights reserved.
+    </p>
+  </div>
+</footer>
+
 <body class="page">
   <header class="site-header">
     <nav class="site-nav" aria-label="Primary">
       <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <!-- Project Header -->
-  <section class="projects" style="padding-top:1rem;">
-    <h2>Recovery Companion</h2>
+  <main class="container">
+    <!-- Hero / Summary -->
+    <section class="projects" style="border-top:none; margin-top:2rem;">
+      <h1>Recovery Companion</h1>
+      <p>
+        <strong>Recovery Companion</strong> is a mobile app designed to support people in addiction
+        recovery with practical tools, meeting search, and community features&mdash;available on
+        both iOS and Android.
+      </p>
 
-    <!-- App Icon -->
-    <div style="text-align:center; margin:.5rem 0 1.5rem;">
-      <img
-        src="Recovery_Companion.png"
-        alt="Recovery Companion icon"
-        style="max-width:160px;height:auto;border-radius:12px;display:block;margin:0 auto;"
-      />
+      <div class="project-gallery" style="margin-top:1.5rem;">
+        <article class="project-card" style="max-width:320px; margin-inline:auto;">
+          <div class="project-thumb placeholder" aria-hidden="true">
+            <img
+              class="project-thumb"
+              src="Recovery_Companion.png"
+              alt="Recovery Companion app icon"
+            />
+          </div>
+          <p class="project-desc">
+            Public production app built and maintained by Schardt Industries.
+          </p>
+        </article>
+      </div>
 
-      <!-- App Store Link Badge -->
-      <a
-        href="https://apps.apple.com/us/app/recovery-companion-si/id6754466644"
-        target="_blank"
-        rel="noopener noreferrer"
-        style="display:inline-block; margin-top:1rem;"
-      >
-        <img
-          src="app_store_link.png"
-          alt="Download on the App Store"
-          style="width:220px; height:auto;"
-        />
-      </a>
-    </div>
+      <!-- Store links -->
+      <p style="margin-top:1.5rem;">
+        <strong>Available on:</strong>
+      </p>
 
-    <!-- Tester Signup (centered narrow box) -->
-    <div style="max-width:480px;margin:0 auto 2rem;">
-      <h3 style="text-align:center;">Become a Tester</h3>
-      <p style="text-align:center;">Want early access? Drop your email below and I’ll add you to the tester list.</p>
+      <p style="display:flex; flex-wrap:wrap; gap:1rem; justify-content:center; align-items:center;">
+        <a
+          href="https://apps.apple.com/us/app/recovery-companion-si/id6754466644"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View Recovery Companion on the Apple App Store"
+        >
+          <img
+            src="App-Store-Logo-Transparent.png"
+            alt="Download on the App Store"
+            class="store-badge"
+          />
+        </a>
 
-      <form
-        name="rc-testers"
-        method="POST"
-        data-netlify="true"
-        netlify-honeypot="bot-field"
-        class="contact-form"
-        style="background:var(--surface);border:1px solid var(--border);border-radius:0.75rem;padding:1rem;margin-top:0.5rem;"
-      >
-        <input type="hidden" name="form-name" value="rc-testers" />
-        <p hidden>
-          <label>Don’t fill this out if you’re human:
-            <input name="bot-field" />
-          </label>
-        </p>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.schardtindustries.recoverycompanion"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View Recovery Companion on Google Play"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googleplay.svg"
+            alt="Get it on Google Play"
+            class="store-badge"
+          />
+        </a>
+      </p>
+    </section>
 
-        <div class="form-field">
-          <label for="tester-email">Email</label>
-          <input id="tester-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com" />
-        </div>
+    <!-- Overview -->
+    <section class="projects">
+      <h2>Overview</h2>
+      <p>
+        Recovery Companion is a supportive space built by someone in recovery to help people stay
+        connected, motivated, and grounded&mdash;one day at a time. The app combines sobriety
+        tracking, local and online meeting search, community-driven Q&amp;A, and tools for managing
+        cravings and stress.
+      </p>
+      <p>
+        Users can engage as much or as little as they want: some rely on it purely for meeting
+        search and milestone tracking, while others use the built-in social features to ask
+        questions, share progress, and support others.
+      </p>
+    </section>
 
-        <button class="btn" type="submit" style="display:block;margin:0 auto;">Join the tester list</button>
-        <p class="form-hint" style="text-align:center;margin-top:.5rem;">I’ll only use your email to invite you and send build updates.</p>
-      </form>
-    </div>
+    <!-- Key Outcomes -->
+    <section class="projects">
+      <h2>How the app helps</h2>
+      <div class="project-gallery">
+        <article class="project-card">
+          <h3>Stay connected</h3>
+          <p class="project-desc">
+            Quickly find local or online recovery meetings across fellowships, and keep a
+            personalized list of favorites so support is always close.
+          </p>
+        </article>
 
-    <!-- Version + Metadata -->
-    <p><strong>Version:</strong> 1.1.0<br>
-       <strong>Platform:</strong> Android + iOS<br>
-       <strong>Author:</strong> Matthew Schardt (Schardt Industries)<br>
-       <strong>License:</strong> Proprietary / Internal Testing Build
-    </p>
-  </section>
+        <article class="project-card">
+          <h3>Track progress</h3>
+          <p class="project-desc">
+            Track sobriety milestones over time and earn meaningful in-app achievements to celebrate
+            progress, not perfection.
+          </p>
+        </article>
 
-  <!-- README-style content -->
-  <section class="projects" style="border-top:1px solid var(--border); padding-top:1rem;">
-    <h3>Overview</h3>
-    <p><strong>Recovery Companion</strong> helps people in addiction recovery stay mindful, track progress, and connect with supportive resources.
-    It combines journaling, sobriety tracking, relapse-prevention tools, local help discovery, a growing community hub, and a verified meeting locator — all in one private, secure app.</p>
-    <p><strong>v1.1.0</strong> marks a <strong>major milestone</strong>: every tab is functional and stable, with the new <strong>Meetings Finder</strong> powered by a live ingestion and normalization pipeline for <strong>AA/NA meeting data</strong>.</p>
+        <article class="project-card">
+          <h3>Beat cravings</h3>
+          <p class="project-desc">
+            Use built-in tools, grounding exercises, and mini-games to help ride out cravings in a
+            healthier way, especially when meetings or peers aren’t immediately available.
+          </p>
+        </article>
 
-    <h3>Features (as of v1.1.0)</h3>
+        <article class="project-card">
+          <h3>Ask questions &amp; get support</h3>
+          <p class="project-desc">
+            A dedicated Q&amp;A space lets users ask questions, share experience, and support each
+            other in a moderated, app-native environment.
+          </p>
+        </article>
+      </div>
+    </section>
 
-    <h4>Profile</h4>
-    <ul>
-      <li>Supabase Auth with email confirmation & password reset.</li>
-      <li>Editable username, DOB, and bio.</li>
-      <li>Avatar upload with secure Supabase Storage.</li>
-      <li>Row-level security (RLS) in <code>public.profiles</code>.</li>
-    </ul>
+    <!-- Core Features -->
+    <section class="projects">
+      <h2>Core features</h2>
+      <ul style="max-width:720px; margin:0 auto; text-align:left;">
+        <li><strong>Meetings Finder:</strong> Search across multiple fellowships with filters for location, time, and format.</li>
+        <li><strong>Sobriety Tracker:</strong> Track clean/sober time, view history, and earn in-app medals.</li>
+        <li><strong>Beat Craving tools:</strong> Guided prompts, grounding tools, and focus-building mini-games.</li>
+        <li><strong>Ask &amp; Answer:</strong> Community Q&amp;A with reactions, replies, and moderation tools.</li>
+        <li><strong>Profiles (optional):</strong> Users can create a profile for a more personalized experience, or use many features anonymously.</li>
+        <li><strong>Notifications:</strong> Gentle reminders for milestones, check-ins, and key app events.</li>
+        <li><strong>Supportive design:</strong> Dark/light modes, accessible typography, and mobile-first UX.</li>
+      </ul>
+    </section>
 
-    <h4>Ask (Social Hub)</h4>
-    <ul>
-      <li><strong>Forum:</strong> threaded Q&A, emoji reactions.</li>
-      <li><strong>Friends:</strong> requests, blocking/unblocking.</li>
-      <li><strong>Realtime:</strong> Supabase channels keep things live.</li>
-      <li><strong>Moderation:</strong> Edge function + SQL triggers.</li>
-    </ul>
+    <!-- Technical implementation -->
+    <section class="projects">
+      <h2>Technical implementation</h2>
+      <p>
+        Recovery Companion is built as a cross-platform mobile app using a modern JavaScript and
+        cloud-native stack. Schardt Industries designed and implemented the full system end to end.
+      </p>
 
-    <h4>Beat Craving</h4>
-    <ul>
-      <li><strong>Relax Coach:</strong> breathing and PMR routines with animation.</li>
-      <li><strong>Meditate:</strong> offline morning/night quotes.</li>
-      <li><strong>Games:</strong> Memory, Snake, Brick Breaker.</li>
-    </ul>
+      <ul style="max-width:720px; margin:0 auto; text-align:left;">
+        <li><strong>Frontend:</strong> React Native with Expo Router for navigation, theming, and cross-platform UI.</li>
+        <li><strong>Backend &amp; data:</strong> Supabase (PostgreSQL, Row-Level Security, file storage) for user accounts, content, and app data.</li>
+        <li><strong>Auth:</strong> Email/password authentication with secure profile storage and avatar management.</li>
+        <li><strong>Meetings data:</strong> Ingestion scripts that normalize data from multiple sources into a unified meetings database.</li>
+        <li><strong>Deployment:</strong> Expo EAS build and submit workflows for both the Apple App Store and Google Play.</li>
+        <li><strong>Observability:</strong> Logging and monitoring focused on reliability, error visibility, and safe updates.</li>
+      </ul>
+    </section>
 
-    <h4>Sobriety Tracker</h4>
-    <ul>
-      <li>Live “Sober for…” counter.</li>
-      <li>Medals for 1 day → 50 years.</li>
-      <li>Milestone notifications.</li>
-    </ul>
+    <!-- Role -->
+    <section class="projects">
+      <h2>Role &amp; responsibilities</h2>
+      <p>
+        Recovery Companion is a Schardt Industries product designed, implemented, and maintained by
+        founder <strong>Matthew Schardt</strong>. Responsibilities included:
+      </p>
+      <ul style="max-width:720px; margin:0 auto; text-align:left;">
+        <li>Product definition and feature roadmap.</li>
+        <li>System architecture and data modeling.</li>
+        <li>Frontend and backend implementation.</li>
+        <li>App Store and Google Play deployment workflows.</li>
+        <li>Privacy, terms, and support policy documentation.</li>
+        <li>Ongoing maintenance, updates, and user support.</li>
+      </ul>
+    </section>
 
-    <h4>Get Help</h4>
-    <ul>
-      <li>Quick-call 911 & 988 buttons.</li>
-      <li>Nearby hospitals & rehab centers.</li>
-      <li>Emergency contacts saved locally.</li>
-    </ul>
+    <!-- Policies + navigation -->
+    <section class="projects">
+      <h2>Support, privacy, and terms</h2>
+      <p>
+        For support contact details, privacy policy, and terms of use for Recovery Companion, see:
+      </p>
+      <p>
+        <a class="btn" href="recovery_companion_policies.html">Support, Privacy &amp; Terms</a>
+      </p>
 
-    <h4>Meetings Finder (NEW)</h4>
-    <ul>
-      <li>AA / NA meeting locator with live ingestion.</li>
-      <li>Data pipeline from BMLT/TSML to Supabase <code>meetings_master</code>.</li>
-      <li>Filters: program, day, online, nearby.</li>
-      <li>Favorites + admin-reviewed submissions.</li>
-    </ul>
-
-    <h3>What’s New in v1.1.0</h3>
-
-    <h4>Meetings Finder</h4>
-    <ul>
-      <li><code>meetings_master</code> table with UUIDs & indexes.</li>
-      <li>Automated scripts for ingestion & normalization.</li>
-      <li>In-app filters, favorites, add-meeting flow.</li>
-    </ul>
-
-    <h4>Games Polishing</h4>
-    <ul>
-      <li>Brick Breaker physics + paddle reflection.</li>
-      <li>Snake gesture control.</li>
-      <li>Memory scoring updates.</li>
-    </ul>
-
-    <h4>Relax & Meditate</h4>
-    <ul>
-      <li>Improved animation and pacing.</li>
-      <li>Offline quote rotation.</li>
-    </ul>
-
-    <p style="margin-top:2rem;text-align:center;">
-      <a class="btn" href="index.html#in-progress">Back to Projects</a>
-      <a class="btn" href="contact.html">Contact</a>
-      <!-- NEW: Policies button -->
-      <a class="btn" href="recovery_companion_policies.html">Support, Privacy &amp; Terms</a>
-    </p>
-  </section>
+      <p style="margin-top:2rem; display:flex; flex-wrap:wrap; gap:0.75rem; justify-content:center;">
+        <a class="btn" href="index.html">Back to Home</a>
+        <a class="btn" href="contact.html">Discuss a similar project</a>
+      </p>
+    </section>
+  </main>
 
   <script src="js/main.js" defer></script>
 </body>

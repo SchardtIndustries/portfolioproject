@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Schardt Industries</title>
-  <meta name="description" content="Portfolio shell assignment." />
+  <meta name="description" content="Schardt Industries designs and builds custom internal tools and apps for teams that need real-world, operational software." />
 
   <!-- Fonts + CSS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,6 +17,25 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#C41230">
+
+  <!-- OpenGraph Social Preview -->
+  <meta property="og:title" content="Schardt Industries — Custom Software & Internal Tools">
+  <meta property="og:description" content="We design and build custom internal tools, employee portals, and mobile apps that make real-world work easier.">
+  <meta property="og:image" content="https://schardtindustries.com/social-preview.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://schardtindustries.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Schardt Industries — Custom Software & Internal Tools">
+  <meta name="twitter:description" content="We build custom software that simplifies complex work.">
+  <meta name="twitter:image" content="https://schardtindustries.com/social-preview.png">
+
+
+  <!-- Person schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -35,50 +54,40 @@
 <body class="page">
   <header class="site-header">
     <nav class="site-nav" aria-label="Primary">
-      <a href="index.html">Home</a>
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="services.html">Services</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <!-- iOS launch banner -->
-  <!-- Official iOS Launch Banner -->
-  <section class="promo-banner">
-    <a
-      href="https://apps.apple.com/us/app/recovery-companion-si/id6754466644"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="View Recovery Companion SI on the App Store"
-    >
-      <img
-        src="landscape_banner_ad.png"
-        alt="Recovery Companion SI — Now Available on the App Store"
-        class="promo-banner-img"
-      />
-    </a>
+  <!-- Company hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Schardt Industries</h1>
+      <p class="hero-tagline">
+        Custom internal tools and apps for teams that need their software to match the way they actually work.
+      </p>
+      <p class="hero-subtext">
+        From employee portals and operations dashboards to public-facing mobile apps, Schardt Industries handles
+        everything from architecture to deployment.
+      </p>
+      <div class="hero-actions">
+        <a class="btn" href="contact.html">Request a project quote</a>
+        <a href="services.html" class="hero-secondary-link">View services &amp; process</a>
+      </div>
+      <ul class="hero-highlights">
+        <li>✔ Internal employee tools &amp; portals</li>
+        <li>✔ Mobile apps for iOS &amp; Android</li>
+        <li>✔ Operations-focused web apps &amp; dashboards</li>
+      </ul>
+    </div>
   </section>
 
-
   <section class="projects in-progress" id="in-progress">
-    <h2>Projects in Progress</h2>
+    <h2>Active Products &amp; Client Tools</h2>
 
     <div class="project-gallery">
-
-      <!-- CMU Coding Bootcamp -->
-      <a
-        class="project-card"
-        href="https://github.com/SchardtIndustries/CMU"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="View CMU Coding Bootcamp repository on GitHub"
-      >
-        <div class="project-thumb placeholder" aria-hidden="true">
-          <img class="project-thumb" src="CMU_Coding_bootcamp.png" alt="CMU Coding Bootcamp" />
-        </div>
-        <h3>CMU Coding Bootcamp</h3>
-        <p class="project-desc">Coursework & exercises — actively building fundamentals and projects.</p>
-      </a>
-
       <!-- Recovery Companion -->
       <a
         class="project-card"
@@ -101,82 +110,86 @@
         <div class="project-thumb placeholder" aria-hidden="true">
           <img class="project-thumb" src="KWS_Logo_tp.png" alt="Killion & Sons Employee Portal Logo" />
         </div>
-        <h3>Killion & Sons Employee Portal</h3>
+        <h3>Killion &amp; Sons Employee Portal</h3>
         <p class="project-desc">Internal employee portal for operations, scheduling, and communication tools.</p>
       </a>
-
     </div>
   </section>
 
-  <section class="projects">
-    <h2>Completed Projects</h2>
-    <div class="project-gallery">
-      <a
-        href="https://github.com/SchardtIndustries/CMU-Memory_Game"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="View CMU Memory Game on GitHub"
-      >
-        <img src="Icon.ico" alt="Memory Game Project Icon" />
-        <p>Memory Game</p>
-      </a>
+  <!-- Global footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-main">
+        <p class="footer-brand"><strong>Schardt Industries</strong></p>
+        <p class="footer-tagline">Custom software, internal tools, and mobile apps.</p>
 
-      <a
-        href="https://github.com/SchardtIndustries/Orb_Physics"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="View Orb Physics on GitHub"
-      >
-        <img src="Icon2.ico" alt="Orb Physics Project Icon" />
-        <p>Orb Physics</p>
-      </a>
+        <p>
+          <a href="mailto:matthewschardt@schardtindustries.com">
+            matthewschardt@schardtindustries.com
+          </a>
+          <span class="footer-separator">·</span>
+          <span>412-894-6558</span>
+        </p>
+      </div>
 
-      <a
-        href="henrys-ticker.html"
-        aria-label="View Henry's Ticker project page"
-      >
-        <img src="henry-the-highland.png" alt="Henry's Ticker application logo featuring a Highland cow" />
-        <p>Henry's Ticker</p>
-      </a>
+      <div class="footer-social">
+        <p class="footer-social-heading">Connect with Schardt Industries</p>
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/matthew-schardt/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit my LinkedIn profile"
+          >
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" />
+          </a>
+
+          <a
+            href="https://github.com/SchardtIndustries"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit my GitHub profile"
+          >
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" />
+          </a>
+
+          <!-- App Store developer link -->
+          <a
+            href="https://apps.apple.com/us/developer/matthew-schardt/id1848414132"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View my apps on the Apple App Store"
+          >
+            <img
+              src="App-Store-Logo-Transparent.png"
+              alt="Apps on the App Store"
+              class="store-badge"
+            />
+          </a>
+
+          <!-- Google Play developer link -->
+          <a
+            href="https://play.google.com/store/apps/developer?id=Matthew+Schardt&hl=en_US"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View my apps on Google Play"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googleplay.svg"
+              alt="Apps on Google Play"
+              class="store-badge"
+            />
+          </a>
+        </div>
+      </div>
     </div>
-  </section>
 
-  <section class="social-links">
-    <h2>Connect with Me</h2>
-    <div class="social-icons">
-      <a
-        href="https://www.linkedin.com/in/matthew-schardt/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Visit my LinkedIn profile"
-      >
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" />
-      </a>
-
-      <a
-        href="https://github.com/SchardtIndustries"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Visit my GitHub profile"
-      >
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" />
-      </a>
-
-      <!-- App Store developer link -->
-      <a
-        href="https://apps.apple.com/us/developer/matthew-schardt/id1848414132"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="View my apps on the Apple App Store"
-      >
-        <img
-          src="App-Store-Logo-Transparent.png"
-          alt="View my apps on the App Store"
-          class="app-store-badge"
-        />
-      </a>
+    <div class="footer-bottom">
+      <p class="footer-copy">
+        &copy; 2025 Schardt Industries. All rights reserved.
+      </p>
     </div>
-  </section>
+  </footer>
 
   <script src="js/main.js" defer></script>
 </body>
