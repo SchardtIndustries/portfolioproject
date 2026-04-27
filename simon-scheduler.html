@@ -6,7 +6,7 @@
   <title>Simon Scheduler — Schardt Industries</title>
   <meta
     name="description"
-    content="Simon Scheduler is a work-in-progress family scheduling and shared chore board built for multi-home households and smart home displays."
+    content="Simon Scheduler is a live web app for family scheduling, shared chores, and household coordination, with mobile apps coming soon."
   />
 
   <!-- Fonts + CSS -->
@@ -34,7 +34,11 @@
 
   <main id="main" class="container" tabindex="-1">
     <section class="projects" style="padding-top:1rem;">
-      <h1>Simon Scheduler <span style="font-size:.7em; font-weight:400;">(Work in Progress)</span></h1>
+      <p class="status-row" aria-label="Simon Scheduler availability">
+        <span class="status-pill status-pill-live">Web app live</span>
+        <span class="status-pill">Mobile app coming soon</span>
+      </p>
+      <h1>Simon Scheduler</h1>
 
       <!-- Icon + quick summary -->
       <div style="display:flex; flex-wrap:wrap; gap:2rem; margin-top:1rem;">
@@ -48,40 +52,41 @@
 
         <div style="flex:1 1 260px; min-width:260px;">
           <p>
-            <strong>Simon Scheduler</strong> is a shared family calendar and smart-home-friendly
-            task board designed for households that juggle schedules, chores, and shopping lists
-            across multiple homes.
+            <strong>Simon Scheduler</strong> is a live web app for families and households that
+            need one calm place for calendars, chores, shopping lists, and the daily handoffs that
+            keep everyone moving.
           </p>
 
           <p>
-            The project is currently in <strong>early development</strong> and not yet publicly available.
-            I’m actively prototyping the data model and UI around real-world family use.
+            The web experience is available now, built for desktop, tablets, and smart-home-friendly
+            displays. Native mobile apps are next, with iOS and Android releases planned soon.
           </p>
 
-          <h2>What it’s aiming to do</h2>
+          <h2>What it helps with</h2>
           <ul>
-            <li>Shared family calendar that keeps multiple households in sync.</li>
+            <li>A shared family calendar that keeps multiple households in sync.</li>
             <li>Chores and task boards that can be assigned to specific people.</li>
-            <li>Shopping and todo lists that stay in sync across devices.</li>
+            <li>Shopping and todo lists that stay current across the household.</li>
             <li>
-              A “wall display” mode for tablets / Raspberry Pi screens mounted in the kitchen
+              A wall display mode for tablets or Raspberry Pi screens mounted in the kitchen
               or entryway.
             </li>
           </ul>
 
           <p>
-            If your family or household setup sounds similar, I’d love to have you test early
-            builds and help shape how this works.
+            It is built around real household coordination: shared custody schedules, busy family
+            routines, roommate houses, and anyone who needs less friction around the same recurring
+            questions.
           </p>
         </div>
       </div>
 
       <!-- Tester Signup -->
       <section aria-labelledby="tester-signup-heading" style="margin-top:2.5rem; max-width:520px;">
-        <h2 id="tester-signup-heading">Apply to be a tester</h2>
+        <h2 id="tester-signup-heading">Get Simon Scheduler updates</h2>
         <p>
-          Want early access when the first private test builds are ready? Share a bit about your
-          household and I’ll reach out with details.
+          Want access details for the web app or a heads-up when the mobile apps are ready? Share
+          a bit about your household and I’ll reach out with the right next step.
         </p>
 
         <form
@@ -140,13 +145,13 @@
               id="tester-platform-ss"
               name="platforms"
               rows="3"
-              placeholder="Wall-mounted display, phones, tablets, desktop, etc."
+              placeholder="Web app, wall-mounted display, iPhone, Android, tablets, desktop, etc."
             ></textarea>
           </div>
 
-          <button class="btn" type="submit">Join the tester list</button>
+          <button class="btn" type="submit">Get updates</button>
           <p class="form-hint" style="margin-top:.5rem;">
-            I’ll only use this information to contact you about Simon Scheduler tests and updates.
+            I’ll only use this information to contact you about Simon Scheduler access and launch updates.
           </p>
         </form>
       </section>

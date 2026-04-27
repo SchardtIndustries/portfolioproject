@@ -415,6 +415,12 @@ body.page {
   display: block;
 }
 
+.project-thumb-contain {
+  object-fit: contain;
+  padding: 0.5rem;
+  background: #fff;
+}
+
 /* Placeholder tile if you don't have an image yet */
 .project-thumb.placeholder {
   display: grid;
@@ -439,6 +445,38 @@ body.page {
   margin: 0;
   color: var(--muted);
   font-size: 0.95rem;
+}
+
+.status-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0 0 0.75rem;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 0.3rem 0.65rem;
+}
+
+a.status-pill:hover,
+a.status-pill:focus {
+  text-decoration: none;
+}
+
+.status-pill-live {
+  border-color: rgba(196, 18, 48, 0.24);
+  background: rgba(196, 18, 48, 0.08);
+  color: var(--cmu-red-600);
 }
 
 /* App Store promo banner */
