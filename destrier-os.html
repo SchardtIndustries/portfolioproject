@@ -6,7 +6,7 @@
   <title>DestrierOS — Schardt Industries</title>
   <meta
     name="description"
-    content="DestrierOS is a multi-tenant operations platform by Schardt Industries for field-service teams that need scheduling, CRM, fleet visibility, HR, forms, learning, and reporting in one system."
+    content="DestrierOS is a multi-tenant operations platform by Schardt Industries for field-service teams that need communications, service intake, CRM, fleet telematics, scheduling, HR, forms, learning, compliance, and reporting in one system."
   />
 
   <!-- Fonts + CSS -->
@@ -29,7 +29,7 @@
 
   <!-- OpenGraph Social Preview -->
   <meta property="og:title" content="DestrierOS — Schardt Industries">
-  <meta property="og:description" content="A field-service operations platform connecting scheduling, field work, training, compliance, and reporting.">
+  <meta property="og:description" content="A field-service operations platform connecting communications, service intake, CRM, fleet telematics, scheduling, HR, forms, learning, compliance, and reporting.">
   <meta property="og:image" content="https://schardtindustries.com/social-preview.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1536">
@@ -40,7 +40,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="DestrierOS — Schardt Industries">
-  <meta name="twitter:description" content="A War Horse operations platform for field-service teams.">
+  <meta name="twitter:description" content="A multi-tenant operations platform for field-service teams.">
   <meta name="twitter:image" content="https://schardtindustries.com/social-preview.png">
 </head>
 <body class="page">
@@ -65,18 +65,21 @@
         >
           Live platform
         </a>
+        <a class="status-pill" href="#current-status">Production pilot readiness</a>
+        <a class="status-pill" href="#mobile-field">Mobile foundation</a>
         <a class="status-pill" href="#roadmap-direction">Active roadmap</a>
       </p>
       <h1>DestrierOS</h1>
       <p>
         <strong>DestrierOS</strong> is a multi-tenant operations platform for field-service teams
-        that are trying to get scheduling, customer work, fleet visibility, training, compliance,
-        and reporting out of disconnected tools.
+        that need communications, service intake, customer work, fleet telematics, scheduling,
+        people operations, forms, learning, compliance, and reporting to operate from one system.
       </p>
       <p>
-        The product started from an operator problem: real work was being split across paperwork
-        apps, spreadsheets, policies, and systems that did not talk to each other. DestrierOS is the
-        system I wish we had: one operating picture where the handoffs finally hold.
+        The product started from an operator problem: real work was being split across inboxes,
+        service queues, paperwork apps, spreadsheets, policies, fleet tools, and systems that did
+        not talk to each other. DestrierOS is the operating picture I wish we had: one place where
+        the handoffs finally hold.
       </p>
       <p style="margin-top:1rem;">
         <a
@@ -111,15 +114,16 @@
       <h2>Overview</h2>
       <p>
         DestrierOS connects customer relations, GPS and locations, workforce scheduling, human
-        resources, employee self-service, forms, learning, reporting, and admin controls. The goal
-        is not to stack unrelated modules beside each other. The goal is to let work begin in one
-        place and remain visible across the rest of the operation.
+        resources, employee self-service, forms, learning, compliance, reporting, communications,
+        service intake, billing controls, and admin controls. The goal is not to stack unrelated
+        modules beside each other. The goal is to let work begin in one place and remain visible
+        across the rest of the operation.
       </p>
       <p>
-        Scheduling is the first pressure point for many teams: double bookings, crews assigned
-        without the right skills, and job details getting lost between office and field. DestrierOS
-        addresses that wedge, then connects the records, permissions, training, compliance, and
-        reporting behind it.
+        The platform has grown from scheduling and CRM into a broader field-service command center:
+        customer records, service requests, emails, fleet events, staff availability, forms,
+        training status, audit evidence, and executive reporting can all refer to the same tenant,
+        permissions, and activity history.
       </p>
     </section>
 
@@ -128,18 +132,26 @@
       <h2>What it brings together</h2>
       <div class="project-gallery">
         <article class="project-card">
-          <h3>Customer work</h3>
+          <h3>Customer and service work</h3>
           <p class="project-desc">
-            CRM tools for accounts, contacts, leads, opportunities, tasks, quotes, documents, and
-            schedule launch actions tied back to customer records.
+            CRM, service intake, request triage, queue views, SLA policies, approval paths, work
+            order handoff, customer visibility, quotes, documents, and account-linked scheduling.
           </p>
         </article>
 
         <article class="project-card">
-          <h3>Field visibility</h3>
+          <h3>Communications</h3>
           <p class="project-desc">
-            GPS and location workflows for maps, devices, drivers, assets, maintenance, geofences,
-            browser tracking, and telematics foundations.
+            Microsoft and Google inbox connections, message sync, drafts, scheduled send, replies,
+            signatures, mailbox rules, notifications, mentions, and record-linked thread comments.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>Fleet and telematics</h3>
+          <p class="project-desc">
+            Mapbox live mapping, Teltonika hardware ingestion, devices, drivers, assets,
+            maintenance intelligence, geofences, event review, coaching packets, and CSV evidence.
           </p>
         </article>
 
@@ -170,26 +182,47 @@
         <article class="project-card">
           <h3>Reporting and control</h3>
           <p class="project-desc">
-            Company-scoped permissions, saved report views, alerts, audit trails, workflow automation,
-            and reporting across CRM, fleet, workforce, forms, and learning.
+            Company-scoped permissions, record-level access controls, saved reports, alerts, audit
+            trails, compliance programs, release evidence, billing controls, and workflow automation.
           </p>
         </article>
       </div>
     </section>
 
     <!-- Current status -->
-    <section class="projects">
+    <section class="projects" id="current-status">
       <h2>Current status</h2>
       <p>
-        DestrierOS is a live platform with real product depth across CRM, fleet, workforce, HR,
-        forms, learning, permissions, and reporting. It is built for multiple companies to operate
-        in the same system while only seeing their own data.
+        DestrierOS is a live web platform with real product depth across communications, service
+        intake, CRM, fleet, workforce, HR, forms, learning, compliance, reporting, permissions, and
+        admin operations. It is built for multiple companies to operate in the same system while
+        only seeing their own data.
       </p>
       <ul style="max-width:720px; margin:0 auto; text-align:left;">
-        <li><strong>Live foundation:</strong> Next.js, TypeScript, Tailwind CSS, Supabase Auth, Postgres, Row-Level Security, Storage, and Mapbox.</li>
-        <li><strong>Security model:</strong> Company-scoped data isolation with role-based and module-level access controls.</li>
-        <li><strong>Operational depth:</strong> Connected CRM, fleet, EMS scheduling, HR, forms, LMS, reports, alerts, audit trails, and workflow automation.</li>
-        <li><strong>Hardware path:</strong> Telematics work is moving beyond browser check-ins toward vehicle-grade telemetry, with a Teltonika integration path underway.</li>
+        <li><strong>Live foundation:</strong> Next.js, TypeScript, Tailwind CSS, Supabase Auth, Postgres, Row-Level Security, Storage, Mapbox, and a Node 24 runtime target.</li>
+        <li><strong>Operational surface:</strong> Dashboard, Communications, Service Intake, Customer Relations, GPS &amp; Locations, Employees, HR, My HR, Forms, Learning, Reports, Compliance, Profile, Billing, and Admin.</li>
+        <li><strong>Security model:</strong> Company-scoped isolation with row-level security, role defaults, module permissions, workspace permissions, record-level controls, audit trails, and release guardrails.</li>
+        <li><strong>Fleet path:</strong> Browser tracking has expanded into Teltonika hardware ingestion, live rollout checks, device diagnostics, trips, stops, geofence events, maintenance candidates, driver coaching, history search, and fleet evidence exports.</li>
+        <li><strong>Commercial readiness:</strong> Packaged operating tiers, Stripe billing portal/webhook support, tenant entitlements, billing contacts, account-hold flows, and platform-admin billing visibility.</li>
+        <li><strong>Pilot readiness:</strong> Production pilot planning is evidence-led, with named workflow criteria, migration rehearsal, smoke checks, support cadence, issue triage, and rollback gates.</li>
+      </ul>
+    </section>
+
+    <!-- Mobile -->
+    <section class="projects" id="mobile-field">
+      <h2>Mobile &amp; field app foundation</h2>
+      <p>
+        The mobile work has moved from roadmap idea into a separate Expo field app foundation. The
+        current package, <strong>DestrierOS Field</strong>, is being aligned to the web platform's
+        permissions, audit model, tenant checks, billing state, and operational workflows before
+        field execution is expanded.
+      </p>
+      <ul style="max-width:720px; margin:0 auto; text-align:left;">
+        <li>Offline queue models for work status, forms, drafts, signatures, binary evidence, clock events, and location events.</li>
+        <li>Secure session memory, reconnect checks, company membership validation, entitlement checks, and permission parity.</li>
+        <li>Location policy tiers for company-owned devices and user-owned devices, including clocked-in-only tracking.</li>
+        <li>Native capability planning for background location, push notifications, camera/photo evidence, motion safety, secure storage, SQLite, and network state.</li>
+        <li>Mobile GPS is designed to feed the same trip, stop, idle, geofence, route history, overspeed, coaching, and exception-review model as hardware trackers when company policy allows it.</li>
       </ul>
     </section>
 
@@ -198,12 +231,14 @@
       <h2>Roadmap direction</h2>
       <p>
         The roadmap is focused on turning DestrierOS into a fuller end-to-end operating system:
-        communications, inventory and purchasing, work orders, mobile field workflows, compliance
-        audits, accounting, payroll integration, contract lifecycle management, and advanced analytics.
+        production pilot expansion, mobile field workflows, inventory and purchasing, work orders,
+        accounting and payroll integration, contract lifecycle management, public APIs, webhooks,
+        BI feeds, and advanced analytics.
       </p>
       <p>
         The through-line is practical: field teams should be able to create, schedule, execute,
-        document, report on, and improve work without stitching together half a dozen systems.
+        communicate about, document, bill, report on, and improve work without stitching together
+        half a dozen systems.
       </p>
     </section>
 
@@ -213,14 +248,15 @@
       <p>
         Schardt Industries is leading DestrierOS from concept through product architecture,
         engineering, interface design, database design, security rules, implementation, deployment,
-        and ongoing product planning.
+        release readiness, and ongoing product planning.
       </p>
       <ul style="max-width:720px; margin:0 auto; text-align:left;">
         <li>Designed the multi-tenant data model and company-scoped permission structure.</li>
-        <li>Built connected product modules across CRM, fleet, workforce, HR, forms, learning, reports, and admin controls.</li>
-        <li>Created the public product messaging around field-service scheduling chaos and connected operations.</li>
-        <li>Developed customer-facing documentation, quick-start guides, and roadmap planning materials.</li>
-        <li>Iterated the system around real operational pressure from field, dispatch, HR, compliance, and leadership workflows.</li>
+        <li>Built connected product modules across communications, service intake, CRM, fleet, workforce, HR, forms, learning, compliance, reports, billing, and admin controls.</li>
+        <li>Implemented Teltonika telematics ingestion and fleet evidence workflows alongside browser and mobile-location foundations.</li>
+        <li>Developed customer-facing guides, quick starts, enterprise gap analyses, pilot readiness packets, release gates, and roadmap materials.</li>
+        <li>Designed commercial packaging, tenant entitlements, Stripe billing support, billing holds, and platform-admin visibility.</li>
+        <li>Iterated the system around real operational pressure from field, dispatch, service, HR, compliance, finance, and leadership workflows.</li>
       </ul>
     </section>
 
