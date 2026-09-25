@@ -1,0 +1,79 @@
+[
+  {
+    "id": "sales",
+    "status": "open",
+    "title": "Independent Sales Representative",
+    "department": "Sales",
+    "company": "Schardt Industries",
+    "type": "Independent contractor",
+    "location": "Flexible territory",
+    "compensation": "Uncapped commission",
+    "summary": "Build relationships, open doors, and bring DestrierOS to real businesses. Set your own hours and build your own pipeline.",
+    "applicationPrompt": "Tell us about your sales experience, business relationships, and interest in DestrierOS",
+    "sections": [
+      {
+        "heading": "The opportunity",
+        "paragraphs": [
+          "We’re looking for someone who knows how to build relationships, open doors, and sell solutions to real businesses.",
+          "This is a 1099, commission-based position with a lot of freedom. You pick your own hours, choose how and when you work, and build your own contacts and sales pipeline. We’ll provide the tools and product. You bring the sales experience and relationships."
+        ]
+      },
+      {
+        "heading": "Compensation",
+        "bullets": [
+          "100% of the first month’s software subscription on every account you bring in.",
+          "10% recurring commission on those accounts while they remain active.",
+          "No cap on commissions."
+        ]
+      },
+      {
+        "heading": "What you’ll be selling",
+        "paragraphs": [
+          "DestrierOS is our operations platform built for real-world businesses: CRM, scheduling, employees, fleet and GPS, inventory, work orders, compliance, training, invoicing, analytics, and more, all under one system.",
+          "We also manufacture our own kiosks and offer physical GPS and telematics hardware, so you’re selling more than another CRM or software subscription."
+        ]
+      },
+      {
+        "heading": "Grow with us",
+        "paragraphs": [
+          "We’re a locally owned Pittsburgh-area software engineering company looking for someone who wants to grow with us.",
+          "As Schardt Industries grows, our long-term goal is to build an internal W-2 sales team with salary, benefits, company vehicles, and the resources to support them. This independent role is where we’re starting; those future employee benefits are not part of the current commission-based opportunity."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "photo-shoot",
+    "status": "open",
+    "title": "DestrierOS Photo Shoot",
+    "department": "Marketing & Creative",
+    "company": "Schardt Industries",
+    "type": "Project opportunity",
+    "location": "Field & office · Location TBD",
+    "compensation": "From $50/hour · 3-hour minimum",
+    "summary": "Help create real-world validation images of DestrierOS in field and office settings. Bring your skills, experience, and equipment.",
+    "applicationPrompt": "Tell us how you would like to be involved, your relevant experience, and any skills or equipment you can bring",
+    "sections": [
+      {
+        "heading": "The photo shoot",
+        "paragraphs": [
+          "Help us show DestrierOS at work in real field and office settings. We’re putting together a team to create real-world validation images showing the software in use and the everyday workflows it supports."
+        ]
+      },
+      {
+        "heading": "Pay & scheduling",
+        "bullets": [
+          "Pay starts at $50 per hour, with a three-hour minimum.",
+          "Higher rates may be available depending on the skills, equipment, and other contributions you bring to the shoot.",
+          "Dates and times are TBD and will be arranged once the team is selected."
+        ]
+      },
+      {
+        "heading": "What to include",
+        "paragraphs": [
+          "Tell us how you would like to be involved, what relevant skills or equipment you can bring, and your general availability. Include a portfolio or work-sample link if you have one."
+        ]
+      }
+    ]
+  }
+]

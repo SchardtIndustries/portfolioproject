@@ -3,12 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Save Contact — Matthew Schardt</title>
-  <meta
-    name="description"
-    content="Save Matthew Schardt from Schardt Industries to your contacts on iOS or Android."
-  />
+  <title>Application Received — Schardt Industries</title>
+  <meta name="description" content="Thank you for applying to Schardt Industries." />
 
+  <!-- Fonts + CSS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -16,18 +14,31 @@
     rel="stylesheet"
   >
   <link rel="stylesheet" href="css/styles.css" />
+  <meta name="color-scheme" content="light dark" />
+
+  <!-- Icons + PWA -->
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#C41230">
 
-  <meta property="og:title" content="Save Contact — Matthew Schardt">
-  <meta property="og:description" content="Add Matthew Schardt to your contacts in one tap.">
+  <!-- OpenGraph Social Preview -->
+  <meta property="og:title" content="Application Received — Schardt Industries">
+  <meta property="og:description" content="Thank you for your interest in opportunities with Schardt Industries.">
   <meta property="og:image" content="https://schardtindustries.com/social-preview.png">
-  <meta property="og:url" content="https://schardtindustries.com/tap.html">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1536">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:url" content="https://schardtindustries.com/application-thank-you.html">
   <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Application Received — Schardt Industries">
+  <meta name="twitter:description" content="Thank you for your interest in opportunities with Schardt Industries.">
+  <meta name="twitter:image" content="https://schardtindustries.com/social-preview.png">
+  <meta name="robots" content="noindex" />
 </head>
 <body class="page">
   <header class="site-header">
@@ -40,34 +51,11 @@
     </nav>
   </header>
 
-  <main id="main" class="container contact-card-page" tabindex="-1">
-    <section class="contact-card">
-      <p class="contact-card-kicker">NFC Contact Card</p>
-      <h1>Matthew Schardt</h1>
-      <p class="contact-card-role">Founder, Schardt Industries</p>
-
-      <div class="contact-card-methods" aria-label="Contact details">
-        <p><strong>Phone:</strong> <a href="tel:+14127207144">412 720 7144</a></p>
-        <p>
-          <strong>Email:</strong>
-          <a href="mailto:matthewschardt@schardtindustries.com">
-            matthewschardt@schardtindustries.com
-          </a>
-        </p>
-        <p><strong>Website:</strong> <a href="https://schardtindustries.com">schardtindustries.com</a></p>
-      </div>
-
-      <div class="contact-card-actions">
-        <a class="btn" href="matthew-schardt.vcf">Add to Contacts</a>
-        <a class="contact-card-secondary" href="matthew-schardt.vcf" download="matthew-schardt.vcf">
-          Download vCard (.vcf)
-        </a>
-      </div>
-
-      <p class="contact-card-note">
-        On most iOS and Android devices, tapping "Add to Contacts" opens your contacts app import flow.
-      </p>
-    </section>
+  <main class="container careers-page">
+    <h1>Thank you for applying</h1>
+    <p>Your application has been received by Schardt Industries. We’ll review your information and contact you about next steps if there’s a fit.</p>
+    <p>We appreciate your interest in helping us solve real problems for real people.</p>
+    <a class="btn" href="careers.html">Back to Careers</a>
   </main>
 
   <footer class="site-footer">
@@ -75,6 +63,7 @@
       <div class="footer-main">
         <p class="footer-brand"><strong>Schardt Industries</strong></p>
         <p class="footer-tagline">Custom software, internal tools, and mobile apps.</p>
+
         <p>
           <a href="mailto:matthewschardt@schardtindustries.com">
             matthewschardt@schardtindustries.com
@@ -95,6 +84,7 @@
           >
             <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" />
           </a>
+
           <a
             href="https://github.com/SchardtIndustries"
             target="_blank"
@@ -103,13 +93,43 @@
           >
             <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" />
           </a>
+
+          <a
+            href="https://apps.apple.com/us/developer/matthew-schardt/id1848414132"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View my apps on the Apple App Store"
+          >
+            <img
+              src="App-Store-Logo-Transparent.png"
+              alt="Apps on the App Store"
+              class="store-badge"
+            />
+          </a>
+
+          <a
+            href="https://play.google.com/store/apps/dev?id=8252854034263522607"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View my apps on Google Play"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googleplay.svg"
+              alt="Apps on Google Play"
+              class="store-badge"
+            />
+          </a>
         </div>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <p class="footer-copy">&copy; 2025 Schardt Industries. All rights reserved.</p>
+      <p class="footer-copy">
+        &copy; 2025 Schardt Industries. All rights reserved.
+      </p>
     </div>
   </footer>
+
+  <script src="js/main.js" defer></script>
 </body>
 </html>

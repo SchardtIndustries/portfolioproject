@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Careers — Schardt Industries</title>
+  <meta name="description" content="Explore open positions with Schardt Industries and DestrierOS. Search opportunities, view job details, and apply online with your résumé." />
+
+  <!-- Fonts + CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="color-scheme" content="light dark" />
+
+  <!-- Icons + PWA -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="theme-color" content="#C41230">
+
+  <!-- OpenGraph Social Preview -->
+  <meta property="og:title" content="Careers — Schardt Industries">
+  <meta property="og:description" content="Find your next opportunity with Schardt Industries and DestrierOS. Explore open positions and apply online.">
+  <meta property="og:image" content="https://schardtindustries.com/social-preview.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1536">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:url" content="https://schardtindustries.com/careers.html">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Careers — Schardt Industries">
+  <meta name="twitter:description" content="Find your next opportunity with Schardt Industries and DestrierOS. Explore open positions and apply online.">
+  <meta name="twitter:image" content="https://schardtindustries.com/social-preview.png">
+</head>
+<body class="page">
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="careers.html" aria-current="page">Careers</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container careers-page careers-board">
+    <header class="careers-intro">
+      <p class="career-eyebrow">SCHARDT INDUSTRIES / CAREERS</p>
+      <h1>Build what comes next.</h1>
+      <p>Real problems. Useful technology. People who make it happen.</p>
+      <p class="careers-lead">We’re a locally owned Pittsburgh-area software engineering company building DestrierOS and practical solutions for real businesses. Find your next opportunity as we grow.</p>
+      <a class="career-explore" href="destrier-os.html">Get to know DestrierOS &rarr;</a>
+    </header>
+
+    <section aria-labelledby="openings-title">
+      <div class="careers-section-heading"><h2 id="openings-title">Open opportunities</h2><p>Find where you fit.</p></div>
+      <form class="career-filters" role="search" aria-label="Search careers">
+        <div><label for="job-search">Search openings</label><input id="job-search" type="search" placeholder="Job title, skill, or keyword" disabled /></div>
+        <div><label for="job-department">Department</label><select id="job-department" disabled><option value="">All departments</option></select></div>
+        <div><label for="job-type">Opportunity type</label><select id="job-type" disabled><option value="">All types</option></select></div>
+      </form>
+      <div class="career-results-bar"><p id="job-count" role="status" aria-live="polite">Loading opportunities…</p><button id="clear-filters" class="career-text-button" type="button" hidden>Clear filters</button></div>
+      <div id="job-results" class="career-results"></div>
+      <div id="job-empty" class="career-empty" hidden><h3>No matching opportunities</h3><p>Try a different keyword or clear your filters to see all open positions.</p></div>
+      <div id="job-error" class="career-empty" hidden><h3>We couldn’t load the openings</h3><p>Please try again, or email <a href="mailto:matthewschardt@schardtindustries.com">matthewschardt@schardtindustries.com</a>.</p><button class="btn" id="retry-jobs" type="button">Try again</button></div>
+      <noscript><p>Enable JavaScript to search openings and apply online. You can also email <a href="mailto:matthewschardt@schardtindustries.com">matthewschardt@schardtindustries.com</a> about current opportunities.</p></noscript>
+    </section>
+    <aside class="careers-outlook"><h2>Growing with purpose.</h2><p>As Schardt Industries and DestrierOS grow, you’ll find new opportunities here across our teams. Check back for future openings.</p><p><strong>Schardt Industries</strong> · Solving real problems for real people.</p></aside>
+  </main>
+
+  <dialog id="job-dialog" class="career-dialog" aria-labelledby="job-title">
+    <div class="career-dialog-toolbar"><span>Opportunity details</span><button id="close-job" class="career-close" type="button" aria-label="Close opportunity">Close &times;</button></div>
+    <div class="career-dialog-content">
+      <p id="job-category" class="career-eyebrow"></p>
+      <h2 id="job-title" tabindex="-1"></h2>
+      <p id="job-meta" class="career-job-meta"></p>
+      <p id="job-pay" class="career-pay"></p>
+      <a class="btn" id="jump-apply" href="#application-title">Apply for this opportunity</a>
+      <div id="job-description" class="career-description"></div>
+      <section class="career-apply-section" aria-labelledby="application-title">
+        <h3 id="application-title" tabindex="-1">Apply for this opportunity</h3>
+        <p id="application-position"></p>
+        <div id="application-slot">
+<form name="careers-application" method="POST" action="/application-thank-you.html" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field" class="contact-form career-form" aria-labelledby="application-title">
+          <input type="hidden" name="form-name" value="careers-application" />
+          <input type="hidden" name="position" value="" />
+          <input type="hidden" name="job-id" value="" />
+          <input type="hidden" name="department" value="" />
+          <p hidden><label>Leave this blank: <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
+          <p class="form-hint">Name, email, your introduction, and résumé are required. All other fields are optional.</p>
+          <div class="form-field"><label for="application-name">Full name</label><input id="application-name" name="name" type="text" maxlength="200" required autocomplete="name" /></div>
+          <div class="form-field"><label for="application-email">Email address</label><input id="application-email" name="email" type="email" maxlength="200" required autocomplete="email" /></div>
+          <div class="form-field"><label for="application-phone">Phone (optional)</label><input id="application-phone" name="phone" type="tel" maxlength="200" autocomplete="tel" /></div>
+          <div class="form-field"><label for="application-location">City / region (optional)</label><input id="application-location" name="location" type="text" maxlength="200" /></div>
+          <div class="form-field"><label for="application-portfolio">Portfolio, website, or LinkedIn URL (optional)</label><input id="application-portfolio" name="portfolio" type="url" maxlength="200" /></div>
+          <div class="form-field"><label for="application-availability">Availability (optional)</label><input id="application-availability" name="availability" type="text" maxlength="200" /></div>
+          <div class="form-field">
+            <label for="application-message">Tell us about yourself and your interest in this opportunity</label>
+            <textarea id="application-message" name="message" rows="6" maxlength="5000" required></textarea>
+          </div>
+          <div class="form-field">
+            <label for="application-resume">Résumé</label>
+            <input id="application-resume" name="resume" type="file" accept=".pdf,.doc,.docx" required aria-describedby="application-resume-hint application-resume-error" />
+            <span class="form-hint" id="application-resume-hint">Upload one PDF, DOC, or DOCX file, up to 5 MB. Use the portfolio link above for additional work samples.</span>
+            <span class="form-error" id="application-resume-error" aria-live="polite"></span>
+          </div>
+          <p class="form-hint">We’ll use the details you submit to review your application and contact you about this opportunity.</p>
+          <button class="btn" type="submit">Submit application</button>
+        </form>
+        </div>
+      </section>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-main">
+        <p class="footer-brand"><strong>Schardt Industries</strong></p>
+        <p class="footer-tagline">Custom software, internal tools, and mobile apps.</p>
+
+        <p>
+          <a href="mailto:matthewschardt@schardtindustries.com">
+            matthewschardt@schardtindustries.com
+          </a>
+          <span class="footer-separator">·</span>
+          <span>412 720 7144</span>
+        </p>
+      </div>
+
+      <div class="footer-social">
+        <p class="footer-social-heading">Connect with Schardt Industries</p>
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/matthew-schardt/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit my LinkedIn profile"
+          >
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" />
+          </a>
+
+          <a
+            href="https://github.com/SchardtIndustries"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit my GitHub profile"
+          >
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" />
+          </a>
+
+          <a
+            href="https://apps.apple.com/us/developer/matthew-schardt/id1848414132"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View my apps on the Apple App Store"
+          >
+            <img
+              src="App-Store-Logo-Transparent.png"
+              alt="Apps on the App Store"
+              class="store-badge"
+            />
+          </a>
+
+          <a
+            href="https://play.google.com/store/apps/dev?id=8252854034263522607"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View my apps on Google Play"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googleplay.svg"
+              alt="Apps on Google Play"
+              class="store-badge"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">
+        &copy; 2025 Schardt Industries. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/careers.js" defer></script>
+</body>
+</html>
