@@ -807,3 +807,34 @@ body.career-modal-open { overflow: hidden; }
   .career-dialog-toolbar { padding-inline: 1rem; }
   .career-dialog-content { padding: 1.25rem; }
 }
+
+/* Ledger Calendar project page */
+.ledger-page { padding-block: 2.5rem; }
+.ledger-page .status-row { justify-content: flex-start; margin-block: 1.5rem; }
+.ledger-icon { display: block; border-radius: 1.5rem; }
+.ledger-page h1 { font-size: clamp(2rem, 6vw, 3rem); }
+.ledger-page .btn:hover { color: #fff; }
+.ledger-features { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.ledger-features h3 { font-size: 1.1rem; }
+.ledger-features p { margin-bottom: 0; }
+.ledger-start { margin-top: 2rem; }
+.ledger-start h2 { margin-top: 0; }
+.ledger-start ol { padding-left: 1.25rem; }
+.ledger-start li + li { margin-top: 0.75rem; }
+@media (max-width: 540px) {
+  .ledger-features { grid-template-columns: 1fr; }
+}
+
+/* Founder portrait */
+.founder-headshot {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+}
+.founder-headshot-about { width: 320px; margin: 1rem 0 1.5rem; }
+.founder-headshot-tap { width: 240px; margin: 1rem 0; }
+@media (min-width: 600px) {
+  .founder-headshot-about { float: right; width: 45%; margin: 0.25rem 0 1rem 1.5rem; }
+}
